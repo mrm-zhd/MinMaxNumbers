@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min And Max Of Nubmers</title>
+</head>
+<body>
+    <script>
+        var numbers = [25, 956, 63, 7, 325, 745, 625, 54, 6, 39, 118];
+        var Max = numbers[0];
+        var Min = numbers[0];
+
+        function findMax() {
+            numbers.forEach(number => {
+                if (number > Max){
+                    Max = number;
+                }
+            });
+            return Max;
+        }
+
+        function findMin() {
+            numbers.forEach(number => {
+                if (number < Min){
+                    Min = number;
+                }
+            });
+            return Min;
+        }
+
+        findMax();
+        findMin();
+
+        console.log('Max : ' , Max);
+        console.log('Min :' , Min);
+    </script>
+</body>
+</html>
